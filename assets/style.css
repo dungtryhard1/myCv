@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html {
+    position: relative;
+}
+
 body {
     font-size: 14px !important;
 }
@@ -16,12 +21,13 @@ body {
     right: 0;
 }
 
-.container {
+.container-md {
     background-color: #fff !important;
     border: #ccc solid;
-    margin-top: 80px;
     max-width: 900px !important;
     position: relative;
+    top: 80px;
+    margin: auto;
 }
 
 .header {
@@ -88,4 +94,29 @@ p>a {
     text-decoration: none;
     color: #000;
 }
+
+@media screen and (max-width: 900px) {
+    .background {
+        display: none;
+    }
+    .container-md {
+        top: 0px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container-md {
+        border: none;
+        width: 100%;
+    }
+}
+
+  
   
