@@ -4,15 +4,24 @@
     box-sizing: border-box;
 }
 body {
-    min-height: 100vh;
-    background-color: #000 !important;
     font-size: 14px !important;
+}
+
+.background {
+    min-height: 100vh;
+    background: url(../assets/image/bg2.png) no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .container {
     background-color: #fff !important;
     border: #ccc solid;
-    margin-top: 100px;
+    margin-top: 80px;
+    max-width: 900px !important;
+    position: relative;
 }
 
 .header {
@@ -58,6 +67,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 100%;
+    margin-bottom: 24px;
   }
   
   .myTable td {
